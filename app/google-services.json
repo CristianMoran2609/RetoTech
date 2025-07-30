@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "827658101447",
+    "project_id": "reto-7aeb3",
+    "storage_bucket": "reto-7aeb3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827658101447:android:3b3e281110a6901ccd94e2",
+        "android_client_info": {
+          "package_name": "com.moran.retotecnico"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJfE-tA8Gt9Uete_43_tn-lVjrRNEe0Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
