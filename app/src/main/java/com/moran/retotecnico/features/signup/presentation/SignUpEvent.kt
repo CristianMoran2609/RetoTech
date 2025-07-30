@@ -4,4 +4,5 @@ sealed class SignUpEvent {
     data class OnChangeEmail(val value: String) : SignUpEvent()
     data class OnChangePassword(val value: String) : SignUpEvent()
     object OnClickSign : SignUpEvent()
+    object OnClickGoToLogin : SignUpEvent()
 }

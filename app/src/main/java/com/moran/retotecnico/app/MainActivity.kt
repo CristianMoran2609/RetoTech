@@ -4,10 +4,14 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.rememberNavController
 import com.moran.retotecnico.app.ui.theme.RetoTecnicoTheme
+import com.moran.retotecnico.core.navigation.CustomNavHost
 import com.moran.retotecnico.features.signup.presentation.SignUpScreen
 
 class MainActivity : ComponentActivity() {
@@ -16,8 +20,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             RetoTecnicoTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { _ ->
-                    SignUpScreen()
+                Scaffold { padding ->
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(padding),
+                    ) {
+                        CustomNavHost(navController = rememberNavController(), startDestination = "/main")
+                    }
                 }
             }
         }
